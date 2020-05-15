@@ -1,0 +1,13 @@
+2019-10-24 20:18:43.564+0000 INFO  ======== Neo4j 3.5.6 ========
+2019-10-24 20:18:43.638+0000 INFO  Starting...
+2019-10-24 20:18:48.914+0000 INFO  Initiating metrics...
+2019-10-24 20:18:55.135+0000 INFO  Sending metrics to CSV file at F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\metrics
+2019-10-24 20:18:58.248+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-10-24 20:18:58.250+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-10-24 20:18:58.916+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-10-24 20:19:05.532+0000 INFO  Started.
+2019-10-24 20:19:06.530+0000 INFO  Mounted REST API at: /db/manage
+2019-10-24 20:19:06.783+0000 INFO  Server thread metrics have been registered successfully
+2019-10-24 20:19:08.671+0000 INFO  Remote interface available at http://localhost:7474/
+2019-10-24 20:19:38.190+0000 WARN  The client is unauthorized due to authentication failure.
+2019-10-24 20:19:40.864+0000 WARN  The client is unauthorized due to authentication failure.

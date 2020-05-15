@@ -1,0 +1,1423 @@
+2019-10-24 20:18:46.345+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'forseti'
+2019-10-24 20:18:47.569+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-10-24 20:18:47.651+0000 INFO [o.n.k.i.f.StatementLocksFactorySelector] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2019-10-24 20:18:47.699+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-10-24 20:18:47.703+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-10-24 20:18:47.761+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-10-24 20:18:47.762+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.heap.initial_size=512m
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.pagecache.size=512m
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=enterprise
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-10-24 20:18:47.763+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.heap.max_size=1G
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-10-24 20:18:47.764+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-10-24 20:18:47.765+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-10-24 20:18:47.830+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 7.89 GB
+2019-10-24 20:18:47.830+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 1.33 GB
+2019-10-24 20:18:47.830+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 647.19 MB
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 21.43 GB
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 10.14 GB
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 471.00 MB
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 512.00 MB
+2019-10-24 20:18:47.831+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 1.00 GB
+2019-10-24 20:18:47.850+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-10-24 20:18:47.850+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-10-24 20:18:47.851+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.81 MB, used=6.79 MB, max=240.00 MB, threshold=0.00 B
+2019-10-24 20:18:47.851+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=21.92 MB, used=20.97 MB, max=-1.00 B, threshold=0.00 B
+2019-10-24 20:18:47.852+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.75 MB, used=2.54 MB, max=1.00 GB, threshold=0.00 B
+2019-10-24 20:18:47.852+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=310.00 MB, used=20.00 MB, max=-1.00 B, threshold=?
+2019-10-24 20:18:47.858+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=13.00 MB, used=13.00 MB, max=-1.00 B, threshold=?
+2019-10-24 20:18:47.858+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=189.00 MB, used=6.50 MB, max=1.00 GB, threshold=0.00 B
+2019-10-24 20:18:47.858+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-10-24 20:18:47.859+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2019-10-24 20:18:47.926+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 16788@Galaxy
+2019-10-24 20:18:47.927+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-10-24 20:18:47.940+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: America/Halifax
+2019-10-24 20:18:47.941+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-10-24 20:18:47.941+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: OpenJDK 64-Bit Server VM
+2019-10-24 20:18:47.941+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Azul Systems, Inc.
+2019-10-24 20:18:47.941+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.131-b11
+2019-10-24 20:18:47.942+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-10-24 20:18:47.943+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-Xms512m, -Xmx1G, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=desktop, -Dfile.encoding=UTF-8]
+2019-10-24 20:18:47.943+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-graphdb-api-3.5.6.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\aeron-driver-1.15.1.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-core-1.4.0.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\scala-parser-combinators_2.11-1.1.1.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jProcesses-1.6.4.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/nashorn.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-annotation-processors-3.5.6.jar
+2019-10-24 20:18:48.003+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-graph-matching-3.1.9.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-xml-9.4.17.v20190418.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-crypto-core-1.4.0.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-values-3.5.6.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-auth-plugin-api-3.5.6.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-resource-3.5.6.jar
+2019-10-24 20:18:48.004+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\lucene-analyzers-common-5.5.5.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-spatial-index-3.5.6.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/reactive-streams-1.0.2.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-io-2.6.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-data-collector-3.5.6.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-compress-1.18.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jackson-mapper-asl-1.9.13.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-protobuf_2.11-2.5.22.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-server-commercial-3.5.6.jar
+2019-10-24 20:18:48.005+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/eclipse-collections-9.2.0.jar
+2019-10-24 20:18:48.006+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-expression-evaluator-3.5.6.jar
+2019-10-24 20:18:48.007+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-kernel-3.5.6.jar
+2019-10-24 20:18:48.007+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/access-bridge-64.jar
+2019-10-24 20:18:48.007+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-collections-3.5.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-udc-3.5.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-security-commercial-3.5.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/scala-java8-compat_2.11-0.7.0.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-configuration-1.10.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-dbms-3.5.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-graph-algo-3.5.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\aeron-client-1.15.1.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-io-2.6.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\metrics-graphite-4.0.2.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/aeron-driver-1.15.1.jar
+2019-10-24 20:18:48.008+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\jce.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jaxb-api-2.3.0.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-physical-planning-3.5.6.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jline-2.14.3.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/asm-util-6.2.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-planner-spi-3.5-3.5.6.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-enterprise-kernel-3.5.6.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jsr311-api-1.1.2.r612.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-legacy-3.5.6.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-compiled-expressions-3.5.6.jar
+2019-10-24 20:18:48.009+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jsr311-api-1.1.2.r612.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/scala-library-2.11.12.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-diagnostics-3.5.6.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-parser-3.5-3.5.6.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/txw2-2.3.0.1.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/stax-ex-1.7.8.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-csv-3.5.6.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/opencsv-2.3.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-csv-3.5.6.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-crypto-hash-1.4.0.jar
+2019-10-24 20:18:48.010+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-servlet-9.4.17.v20190418.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/asm-tree-6.2.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jaxb-api-2.3.0.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-expressions-3.5-3.5.6.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/ssl-config-core_2.11-0.3.7.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-configuration-3.5.6.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jaxb-core-2.3.0.1.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-kernel-api-3.5.6.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\scala-reflect-2.11.12.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-import-tool-3.5.6.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/metrics-core-4.0.2.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jackson-core-asl-1.9.13.jar
+2019-10-24 20:18:48.011+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\kiama_2.11-2.1.0.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cluster-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-lang3-3.8.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-ha-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-beanutils-1.9.3.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-com-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-ast-3.5-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\lucene-core-5.5.5.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-concurrent-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-backup-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-command-line-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-spatial-index-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\simpleclient-0.5.0.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-ir-3.5-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/istack-commons-runtime-3.0.5.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\concurrentlinkedhashmap-lru-1.4.2.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/slf4j-nop-1.7.25.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-auth-plugin-api-3.5.6.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/dnsns.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-planner-3.4-3.4.13.jar
+2019-10-24 20:18:48.012+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-security-commercial-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-distributed-data_2.11-2.5.22.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-config-core-1.4.0.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-physical-planning-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jersey-server-1.19.3.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\bcprov-jdk15on-1.60.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jersey-servlet-1.19.3.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-front-end-3.5-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/aeron-client-1.15.1.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-commercial-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/simpleclient_httpserver-0.5.0.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-event-1.4.0.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\scallop_2.11-2.1.1.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-causal-clustering-3.5.6.jar
+2019-10-24 20:18:48.013+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/agrona-0.9.31.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-index-3.5.6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-runtime-util-3.5.6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\eclipse-collections-9.2.0.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jaxb-runtime-2.3.0.1.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-com-3.5.6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-lang-1.4.0.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/slf4j-api-1.7.25.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/zstd-jni-1.3.8-6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-expression-3.4-3.4.13.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-values-3.5.6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/kiama_2.11-2.1.0.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-server-commercial-3.5.6.jar
+2019-10-24 20:18:48.014+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\scala-java8-compat_2.11-0.7.0.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunpkcs11.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-text-1.4.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/WMI4Java-1.6.1.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-ssl-3.5.6.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/scala-reflect-2.11.12.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\bcpkix-jdk15on-1.60.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\sunrsasign.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-dbms-3.5.6.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/zstd-proxy-3.5.6.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-io-3.5.6.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/lucene-analyzers-common-5.5.5.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/simpleclient_common-0.5.0.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-expressions-3.5-3.5.6.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/lucene-queryparser-5.5.5.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\asm-6.2.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jPowerShell-1.9.jar
+2019-10-24 20:18:48.015+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-causal-clustering-commercial-3.5.6.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\stax-ex-1.7.8.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jPowerShell-1.9.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\simpleclient_dropwizard-0.5.0.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\jfr.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunmscapi.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-planner-spi-3.5-3.5.6.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jackson-core-asl-1.9.13.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-protobuf_2.11-2.5.22.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-distributed-data_2.11-2.5.22.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-servlet-9.4.17.v20190418.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-logging-1.1.1.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-slotted-runtime-3.5.6.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/bcpkix-jdk15on-1.60.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-http-9.4.17.v20190418.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-query-logging-3.5.6.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\jsse.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jackson-mapper-asl-1.9.13.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\simpleclient_httpserver-0.5.0.jar
+2019-10-24 20:18:48.016+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\txw2-2.3.0.1.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-webapp-9.4.17.v20190418.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-jmx-3.5.6.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jProcesses-1.6.4.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\lucene-queryparser-5.5.5.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/config-1.3.3.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-expression-evaluator-3.5.6.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-server-enterprise-3.5.6.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/parboiled-scala_2.11-1.1.7.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunjce_provider.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-remote_2.11-2.5.22.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\scala-library-2.11.12.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-webapp-9.4.17.v20190418.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\charsets.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-io-3.5.6.jar
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\classes
+2019-10-24 20:18:48.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-legacy-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-server-9.4.17.v20190418.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\FastInfoset-1.2.13.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-interpreted-runtime-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-crypto-core-1.4.0.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-logging-1.1.1.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-commercial-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/simpleclient_dropwizard-0.5.0.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-util-3.4-3.4.13.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-bolt-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-server-3.5.6.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-remote_2.11-2.5.22.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/zipfs.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/lucene-codecs-5.5.5.jar
+2019-10-24 20:18:48.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-lucene-index-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-planner-3.4-3.4.13.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/openCypher-frontend-1-3.4.13.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/localedata.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-cluster_2.11-2.5.22.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-configuration-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jersey-server-1.19.3.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-ha-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-morsel-runtime-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-common-3.5.6.jar
+2019-10-24 20:18:48.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-beanutils-1.9.3.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-slotted-runtime-3.5.6.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-client-9.4.17.v20190418.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-collections-3.2.2.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-util-9.4.17.v20190418.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-annotation-processors-3.5.6.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-event-1.4.0.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\openCypher-frontend-1-3.4.13.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-planner-spi-3.4-3.4.13.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-jmx-3.5.6.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\asm-analysis-6.2.jar
+2019-10-24 20:18:48.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-security-9.4.17.v20190418.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-crypto-hash-1.4.0.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/activation-1.1.1.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-lucene-index-3.5.6.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jersey-core-1.19.3.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-planner-3.5-3.5.6.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-browser-3.2.20.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/lucene-core-5.5.5.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-lang-2.6.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jaxb-core-2.3.0.1.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-unsafe-3.5.6.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-metrics-3.5.6.jar
+2019-10-24 20:18:48.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-ir-3.4-3.4.13.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-collections-3.5.6.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jline-2.14.3.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-concurrent-3.5.6.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-enterprise-cypher-3.5.6.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-expression-3.4-3.4.13.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-security-9.4.17.v20190418.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\opencsv-2.3.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-diagnostics-3.5.6.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/hazelcast-all-3.7.8.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-text-1.4.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-util-9.4.17.v20190418.jar
+2019-10-24 20:18:48.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-query-logging-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\caffeine-2.6.2.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\asm-tree-6.2.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-crypto-cipher-1.4.0.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-http-9.4.17.v20190418.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-logical-plans-3.4-3.4.13.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-logging-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/plugins/*
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-cache-1.4.0.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/eclipse-collections-api-9.2.0.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-rewriting-3.5-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/sunec.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-morsel-runtime-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-cluster-tools_2.11-2.5.22.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/caffeine-2.6.2.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-stream_2.11-2.5.22.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-metrics-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\asm-util-6.2.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\istack-commons-runtime-3.0.5.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-server-9.4.17.v20190418.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/parboiled-core-1.1.7.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-crypto-cipher-1.4.0.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/scallop_2.11-2.1.1.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-compiled-expressions-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-cluster_2.11-2.5.22.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/simpleclient-0.5.0.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-backup-3.5.6.jar
+2019-10-24 20:18:48.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\metrics-core-4.0.2.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-graphdb-api-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/server-api-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-interpreted-runtime-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-security-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-util-3.5-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-xml-9.4.17.v20190418.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-logging-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-security-enterprise-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-configuration-1.10.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\lucene-codecs-5.5.5.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-causal-clustering-commercial-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-ssl-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-lang-2.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/netty-all-4.1.32.Final.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-rewriting-3.5-3.5.6.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-config-ogdl-1.4.0.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-browser-3.2.20.jar
+2019-10-24 20:18:48.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-server-enterprise-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-management-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-logical-plans-3.5-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-fulltext-index-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\resources.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/lz4-1.3.0.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-planner-3.5-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-graph-matching-3.1.9.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jetty-io-9.4.17.v20190418.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-lucene-upgrade-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-graph-algo-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\reactive-streams-1.0.2.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jaxb-runtime-2.3.0.1.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-config-core-1.4.0.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jackson-jaxrs-1.9.13.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-codegen-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\netty-3.9.9.Final.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-common-3.5.6.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\eclipse-collections-api-9.2.0.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\parboiled-scala_2.11-1.1.7.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-lang3-3.8.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jersey-core-1.19.3.jar
+2019-10-24 20:18:48.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-enterprise-cypher-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jersey-servlet-1.19.3.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-coordination_2.11-2.5.22.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-consistency-check-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-unsafe-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\lz4-1.3.0.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-import-tool-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/scala-parser-combinators_2.11-1.1.1.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\slf4j-nop-1.7.25.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-front-end-3.5-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-kernel-commercial-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-enterprise-kernel-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\plugins\*
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-config-ogdl-1.4.0.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-lucene-upgrade-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-udc-3.5.6.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\WMI4Java-1.6.1.jar
+2019-10-24 20:18:48.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\lib\rt.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\agrona-0.9.31.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-procedure-api-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-fulltext-index-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/commons-collections-3.2.2.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-ast-3.5-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-command-line-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-actor_2.11-2.5.22.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-client-9.4.17.v20190418.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-index-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-management-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\javax.servlet-api-3.1.0.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-stream_2.11-2.5.22.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-logical-plans-3.5-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-logical-plans-3.4-3.4.13.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-cluster-tools_2.11-2.5.22.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-bolt-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\simpleclient_common-0.5.0.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-kernel-3.5.6.jar
+2019-10-24 20:18:48.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-runtime-util-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-resource-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\config-1.3.3.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cypher-planner-spi-3.4-3.4.13.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-security-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/jaccess.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/javax.servlet-api-3.1.0.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-data-collector-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\hazelcast-all-3.7.8.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-parser-3.5-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\ssl-config-core_2.11-0.3.7.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/shiro-cache-1.4.0.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-causal-clustering-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/bcprov-jdk15on-1.60.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\parboiled-core-1.1.7.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-util-3.5-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\activation-1.1.1.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-procedure-api-3.5.6.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-lang-1.4.0.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-10-24 20:18:48.031+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/asm-6.2.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\jetty-io-9.4.17.v20190418.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\zstd-jni-1.3.8-6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/FastInfoset-1.2.13.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/metrics-graphite-4.0.2.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/asm-analysis-6.2.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-codegen-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-server-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/akka-coordination_2.11-2.5.22.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/F:/SEM%201/DWM/Project/distributions/java/zulu8.21.0.1-jdk8.0.131/jre/lib/ext/cldrdata.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/netty-3.9.9.Final.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-consistency-check-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-ir-3.5-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-kernel-api-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\server-api-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/jackson-jaxrs-1.9.13.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-kernel-commercial-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-ir-3.4-3.4.13.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\zstd-proxy-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\netty-all-4.1.32.Final.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-cluster-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\commons-compress-1.18.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\akka-actor_2.11-2.5.22.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/F:/SEM%201/DWM/Project/neo4jDatabases/database-883bae34-41a5-42a4-856a-5a9482655f74/installation-3.5.6/lib/neo4j-security-enterprise-3.5.6.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\neo4j-cypher-util-3.4-3.4.13.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\shiro-core-1.4.0.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\lib\slf4j-api-1.7.25.jar
+2019-10-24 20:18:48.032+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-10-24 20:18:48.033+0000 INFO [o.n.i.d.DiagnosticsManager] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\bin
+2019-10-24 20:18:48.034+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\Sun\Java\bin
+2019-10-24 20:18:48.034+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-10-24 20:18:48.035+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-10-24 20:18:48.035+0000 INFO [o.n.i.d.DiagnosticsManager] F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\bin
+2019-10-24 20:18:48.035+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-10-24 20:18:48.035+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-10-24 20:18:48.035+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\wbem
+2019-10-24 20:18:48.037+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-10-24 20:18:48.037+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\OpenSSH
+2019-10-24 20:18:48.038+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Git\cmd
+2019-10-24 20:18:48.039+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\PuTTY
+2019-10-24 20:18:48.041+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\siddh\AppData\Local\Programs\Python\Python37-32\Scripts
+2019-10-24 20:18:48.042+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\siddh\AppData\Local\Programs\Python\Python37-32
+2019-10-24 20:18:48.043+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\MongoDB\Server\4.2\bin
+2019-10-24 20:18:48.064+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\MySQL\MySQL Shell 8.0\bin
+2019-10-24 20:18:48.065+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\siddh\AppData\Local\Programs\Neo4j Desktop
+2019-10-24 20:18:48.065+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-10-24 20:18:48.090+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = F:\SEM 1\DWM\Project\distributions\java\zulu8.21.0.1-jdk8.0.131\jre\bin
+2019-10-24 20:18:48.090+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = ;
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = CA
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.script = 
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = 
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = C:\Users\siddh\AppData\Local\Programs\Neo4j Desktop
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.variant = 
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = C:\Users\siddh
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = America/Halifax
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = siddh
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = com.neo4j.server.enterprise.CommercialEntryPoint --home-dir=F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6 --config-dir=F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\conf
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = \
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-10-24 20:18:48.091+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-10-24 20:18:48.092+0000 INFO [o.n.i.d.DiagnosticsManager] sun.desktop = windows
+2019-10-24 20:18:48.092+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = amd64
+2019-10-24 20:18:48.092+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-10-24 20:18:48.164+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2017a (available for 600 zone identifiers)
+2019-10-24 20:18:48.164+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-10-24 20:18:48.750+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Software Loopback Interface 1:
+2019-10-24 20:18:48.761+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP):
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft 6to4 Adapter:
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:6d86:ab84:3d9c:2905%wlan0
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2019-10-24 20:18:48.762+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft IP-HTTPS Platform Adapter:
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller:
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:10a1:8cf1:45ca:d5ab%eth3
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:5547:4a0f:aff5:8795%wlan1
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface AnchorFree TAP-Windows Adapter V9:
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:d1bc:e1d0:457d:438c%eth4
+2019-10-24 20:18:48.763+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 134.190.164.159
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:7cf3:e17:34df:d19d%wlan2
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface AnchorFree TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface AnchorFree TAP-Windows Adapter V9-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface AnchorFree TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC-Virtual WiFi Filter Driver-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC-Native WiFi Filter Driver-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek RTL8723BE Wireless LAN 802.11n PCI-E NIC-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.764+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-10-24 20:18:48.765+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-10-24 20:18:48.914+0000 INFO [o.n.m.MetricsExtension] Initiating metrics...
+2019-10-24 20:18:49.722+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_4[v0.A.9]' for the new store
+2019-10-24 20:18:53.809+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] No label index found, this might just be first use. Preparing to rebuild.
+2019-10-24 20:18:53.937+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\data\databases\graph.db\neostore.transaction.db.0] version=0, last transaction in previous log=1
+2019-10-24 20:18:53.939+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at <no log position given>)
+2019-10-24 20:18:54.314+0000 INFO [o.n.b.i.BackupServer] BackupServer communication server started and bound to /127.0.0.1:6362
+2019-10-24 20:18:54.333+0000 WARN [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2019-10-24 20:18:54.354+0000 WARN [o.n.k.i.s.MetaDataStore] Counts store rebuild completed.
+2019-10-24 20:18:54.411+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Rebuilding label index, this may take a while
+2019-10-24 20:18:54.517+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index rebuilt (roughly 0 nodes)
+2019-10-24 20:18:54.526+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-10-24 20:18:54.527+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: enterprise single StoreId{creationTime=1571948331728, randomId=-1563750511879556601, storeVersion=16094931155187206, upgradeTime=1571948331728, upgradeId=1}
+2019-10-24 20:18:54.527+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.6,73866e84158298d5f4a7325b6466c0189ad21d11
+2019-10-24 20:18:54.527+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-10-24 20:18:54.529+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-10-24 20:18:54.530+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-10-24 20:18:54.530+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-10-24 20:18:54.530+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-10-24 20:18:54.531+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-10-24 20:18:54.531+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-10-24 20:18:54.531+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-10-24 20:18:54.531+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-10-24 20:18:54.531+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-10-24 20:18:54.532+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-10-24 20:18:54.533+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-10-24 20:18:54.533+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-10-24 20:18:54.533+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=0 high=-1
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=0 high=-1
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-10-24 20:18:54.534+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=0 high=-1
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=0 high=-1
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=0 high=-1
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=0 high=-1
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-10-24 20:18:54.535+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-10-24 20:18:54.536+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-10-24 20:18:54.536+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1571948331728
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): -1563750511879556601
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-10-24 20:18:54.537+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1571948331728
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 0
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-10-24 20:18:54.538+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-10-24 20:18:54.540+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-10-24 20:18:54.541+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-10-24 20:18:54.543+0000 INFO [o.n.i.d.DiagnosticsManager] No transactions found in any log
+2019-10-24 20:18:54.543+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-10-24 20:18:54.631+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-10-24 20:18:54.635+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 16106123264 / 13587464192 / 84
+2019-10-24 20:18:54.635+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-10-24 20:18:54.661+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-10-24 20:18:54.662+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-10-24T17:18:53-0300 - 0.00 B
+2019-10-24 20:18:54.662+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-10-24T17:18:52-0300 - 8.00 kB
+2019-10-24 20:18:54.663+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-10-24T17:18:54-0300 - 96.00 B
+2019-10-24 20:18:54.688+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-10-24T17:18:52-0300 - 9.00 B
+2019-10-24 20:18:54.692+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-10-24T17:18:54-0300 - 40.00 kB
+2019-10-24 20:18:54.693+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-10-24T17:18:51-0300 - 0.00 B
+2019-10-24 20:18:54.694+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.695+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-10-24T17:18:51-0300 - 8.00 kB
+2019-10-24 20:18:54.696+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.696+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-10-24T17:18:50-0300 - 0.00 B
+2019-10-24 20:18:54.697+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.709+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-10-24T17:18:50-0300 - 8.00 kB
+2019-10-24 20:18:54.710+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.711+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-10-24T17:18:50-0300 - 0.00 B
+2019-10-24 20:18:54.711+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-10-24T17:18:50-0300 - 8.00 kB
+2019-10-24 20:18:54.712+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.714+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.714+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-10-24T17:18:50-0300 - 0.00 B
+2019-10-24 20:18:54.715+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.716+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-10-24T17:18:50-0300 - 8.00 kB
+2019-10-24 20:18:54.717+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.717+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-10-24T17:18:50-0300 - 8.00 kB
+2019-10-24 20:18:54.719+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.719+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-10-24T17:18:51-0300 - 8.00 kB
+2019-10-24 20:18:54.720+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.721+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-10-24T17:18:50-0300 - 0.00 B
+2019-10-24 20:18:54.722+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-10-24T17:18:50-0300 - 9.00 B
+2019-10-24 20:18:54.722+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-10-24T17:18:51-0300 - 0.00 B
+2019-10-24 20:18:54.725+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.726+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-10-24T17:18:50-0300 - 8.00 kB
+2019-10-24 20:18:54.727+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.728+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-10-24T17:18:51-0300 - 8.00 kB
+2019-10-24 20:18:54.729+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-10-24T17:18:51-0300 - 9.00 B
+2019-10-24 20:18:54.729+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-10-24T17:18:53-0300 - 16.00 B
+2019-10-24 20:18:54.729+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-10-24 20:18:54.730+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 112.24 kB
+2019-10-24 20:18:54.730+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 112.00 kB
+2019-10-24 20:18:54.730+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-10-24 20:18:54.730+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-10-24 20:18:54.731+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-10-24 20:18:54.732+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-10-24 20:18:54.732+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup started.
+2019-10-24 20:18:54.850+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup completed. 0 pages loaded. Duration: 117ms.
+2019-10-24 20:18:55.135+0000 INFO [o.n.m.MetricsExtension] Sending metrics to CSV file at F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\metrics
+2019-10-24 20:18:57.378+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-10-24 20:18:58.249+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-10-24 20:18:58.250+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-10-24 20:18:58.916+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
+2019-10-24 20:19:05.711+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-10-24 20:19:06.784+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics have been registered successfully
+2019-10-24 20:19:08.672+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-10-24 20:19:38.190+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-10-24 20:19:40.865+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-10-24 20:20:17.543+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 33 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:20:17.544+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 33 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:20:17.546+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 33 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:20:17.548+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 33 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:21:19.902+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 95 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+create(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:21:19.904+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 95 seconds: load csv from 'file:///fishes.csv' as animal
+create(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:21:40.577+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 82 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:21:40.577+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 82 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:21:40.593+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 82 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:21:40.599+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 82 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:22:57.043+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 97 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:22:59.347+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 78 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:22:59.349+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 78 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:22:59.349+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 78 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:22:59.352+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 78 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:23:20.740+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 21 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:23:20.756+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 21 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:24:41.827+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 104 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:24:41.828+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 104 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:24:42.491+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 125 seconds: EXPLAIN load csv from 'file:///animals.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:24:42.493+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 125 seconds: load csv from 'file:///animals.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:24:57.716+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:24:57.717+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 15 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:25:00.721+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 99 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:25:00.723+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 99 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:25:58.788+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 57 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:25:58.790+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 57 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:29:27.895+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 270 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:29:27.897+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 270 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:29:58.527+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 419 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:29:58.529+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 239 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:29:58.530+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 419 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:29:58.533+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 239 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:30:02.420+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 319 seconds: EXPLAIN load csv from 'file:///animals.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:30:02.423+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 319 seconds: load csv from 'file:///animals.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:30:06.626+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 38 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:30:06.628+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 38 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:30:10.208+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 11 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:30:10.210+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 11 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:30:10.210+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 11 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:30:10.212+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 11 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:30:39.734+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 29 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:30:39.736+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 29 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:31:47.515+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 678 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-10-24 20:31:47.516+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 678 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-10-24 20:32:46.752+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 160 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:32:46.754+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 160 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:34:05.138+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by "Scheduled checkpoint for time threshold" @ txId: 17 checkpoint started...
+2019-10-24 20:34:05.207+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 17 to [F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\data\databases\graph.db\neostore.counts.db.b], from [F:\SEM 1\DWM\Project\neo4jDatabases\database-883bae34-41a5-42a4-856a-5a9482655f74\installation-3.5.6\data\databases\graph.db\neostore.counts.db.a].
+2019-10-24 20:34:05.545+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by "Scheduled checkpoint for time threshold" @ txId: 17 checkpoint completed in 407ms
+2019-10-24 20:34:05.561+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-10-24 20:36:01.695+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 787 seconds: EXPLAIN load csv from 'file:///.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:36:01.696+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 787 seconds: load csv from 'file:///.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:37:34.079+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 443 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:37:34.081+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 414 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:37:34.081+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 443 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:37:34.083+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 414 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:37:38.653+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 24 seconds: EXPLAIN load csv from 'file:///animal_feeding_habits.csv' as animal
+CREATE(:FeedingHabits {habit: animal[0]})
+2019-10-24 20:37:38.654+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 24 seconds: load csv from 'file:///animal_feeding_habits.csv' as animal
+CREATE(:FeedingHabits {habit: animal[0]})
+2019-10-24 20:37:40.851+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1032 seconds: EXPLAIN match(n) return n
+2019-10-24 20:37:40.852+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1032 seconds: match(n) return n
+2019-10-24 20:37:41.259+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 857 seconds: EXPLAIN MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:37:41.259+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 857 seconds: MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:37:43.540+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 983 seconds: EXPLAIN MATCH (n)DETACH DELETE n
+2019-10-24 20:37:43.541+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 983 seconds: MATCH (n)DETACH DELETE n
+2019-10-24 20:37:44.244+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 297 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:37:44.245+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 297 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:37:49.421+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15 seconds: 
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:37:49.422+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:37:49.423+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 15 seconds: CALL dbms.queryJmx("org.neo4j:instance=*,name=Kernel") yield attributes
+RETURN {name: 'Kernel', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Store file sizes") yield attributes
+RETURN {name: 'Store file sizes', data: collect(attributes)} as result
+UNION ALL
+CALL dbms.queryJmx("org.neo4j:instance=*,name=Configuration") yield attributes
+RETURN {name: 'Configuration', data: collect(attributes)} as result
+
+2019-10-24 20:37:49.424+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 15 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:38:07.663+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 23 seconds: EXPLAIN load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:38:07.665+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 23 seconds: load csv from 'file:///fishes.csv' as animal
+CREATE(:MarineAnimal {name: animal[0], habitat: animal[3], feedingHabits: animal[4], conservationStatus: animal[5]})
+2019-10-24 20:38:10.826+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 27 seconds: EXPLAIN MATCH (n)DETACH DELETE n
+2019-10-24 20:38:10.828+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 27 seconds: MATCH (n)DETACH DELETE n
+2019-10-24 20:38:11.349+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 32 seconds: EXPLAIN load csv from 'file:///animal_feeding_habits.csv' as animal
+CREATE(:FeedingHabits {habit: animal[0]})
+2019-10-24 20:38:11.351+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 32 seconds: load csv from 'file:///animal_feeding_habits.csv' as animal
+CREATE(:FeedingHabits {habit: animal[0]})
+2019-10-24 20:38:12.983+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 32 seconds: EXPLAIN match(n) return n
+2019-10-24 20:38:12.984+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 32 seconds: match(n) return n
+2019-10-24 20:38:24.405+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 34 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:38:24.408+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 34 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:38:32.158+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 50 seconds: EXPLAIN MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:38:32.159+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 50 seconds: MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:38:44.540+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 12 seconds: EXPLAIN MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:38:44.541+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 12 seconds: MATCH(a:MarineAnimal), (b:FeedingHabits)
+where a.feedingHabits = b.habit
+CREATE(a)-[r:IDENTICAL_FEEDING_HABITS]->(b)
+return r
+2019-10-24 20:38:55.081+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 30 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:38:55.084+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 30 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-10-24 20:39:22.899+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 455 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-10-24 20:39:22.899+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 455 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-10-24 20:42:59.076+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1428 seconds: MATCH (n) RETURN count(n);
+2019-10-24 20:42:59.077+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1428 seconds: MATCH (n) RETURN count(n);
+2019-10-24 20:42:59.080+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1428 seconds: MATCH ()-->() RETURN count(*);
+2019-10-24 20:42:59.080+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1428 seconds: MATCH ()-->() RETURN count(*);
+2019-10-24 20:42:59.095+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1427 seconds: CALL db.labels() YIELD label RETURN count(*)
+2019-10-24 20:42:59.095+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1427 seconds: CALL db.labels() YIELD label RETURN count(*)
+2019-10-24 20:42:59.111+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1427 seconds: CALL db.relationshipTypes() YIELD relationshipType RETURN count(*)
+2019-10-24 20:42:59.111+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1427 seconds: CALL db.relationshipTypes() YIELD relationshipType RETURN count(*)

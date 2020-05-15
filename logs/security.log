@@ -1,0 +1,10 @@
+2019-10-24 20:19:10.156+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:10.703+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:38.188+0000 ERROR []: failed to log in: invalid principal or credentials
+2019-10-24 20:19:38.518+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:40.863+0000 ERROR []: failed to log in: invalid principal or credentials
+2019-10-24 20:19:41.170+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:41.188+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:41.206+0000 INFO  [neo4j]: logged in
+2019-10-24 20:19:41.869+0000 INFO  [neo4j]: logged in
+2019-10-24 20:42:59.072+0000 INFO  [neo4j]: logged in
